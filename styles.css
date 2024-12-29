@@ -1,0 +1,222 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0 auto;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.9;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    /* my code below for the body PX ↔︎ REM conversion tables ; 15 px, 0.9 rem ; 16 px, 1 rem ; 18 px, 1.1 rem ; 20 px, 1.3 rem */
+    font-family: "Poppins", sans-serif;
+    background-color: var(--VeryLightGray);
+    font-size: 0.9rem; /* 15px to 0.9 rem text*/
+    
+    /* flex-direction: column; remove all of this because i need to try grid layout */
+    
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    
+    
+    
+    width: 40px;
+   /* maybe ill use a padding to move it down  padding-top: 30px; */
+    float: right;
+    padding-top: 20px;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  
+  /* 8. Improve line wrapping */
+  p {
+   
+    color: var(--GrayishBlue);
+    font-size: 0.8rem;
+    line-height: 150%;
+    font-weight: 400;
+    
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+    font-size: 1.3rem;
+    
+    
+  }
+  
+  
+  
+
+  /*
+    My css code below 
+  */
+
+  :root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Verydarkblue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+
+  }
+
+  .hero__text--light {
+    font-weight: 200;
+  }
+
+  .container {
+    border: 2px solid red;
+
+
+  }
+
+  .hero {
+    /* border: 3px solid blue; */
+    text-align: center;
+    padding-bottom: 40px;
+
+  }
+
+  .hero__text {
+    width: 55%; /* change in media query */
+  }
+
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+
+  .card-feature-one {
+    border-top: 4px solid var(--Cyan);
+    border-radius: 5px;
+    width: 270px;
+    
+    box-shadow: 1px 4px 20px rgb(219, 218, 218);
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+   
+  }
+
+  .card-feature-two {
+    border-top: 4px solid var(--Red);
+    border-radius: 5px;
+    width: 270px;
+    
+    box-shadow: 1px 4px 20px rgb(219, 218, 218);
+    background-color: white;
+   
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+
+  .card-feature-three {
+    border-top: 4px solid var(--Orange);
+    border-radius: 5px;
+    width: 270px;
+    
+    box-shadow: 1px 4px 20px rgb(219, 218, 218);
+    background-color: white;
+
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-feature-four {
+    border-top: 4px solid var(--Blue);
+    border-radius: 5px;
+    width: 270px;
+    
+    box-shadow: 1px 4px 20px rgb(219, 218, 218);
+    background-color: white;
+    
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width:650px) {
+    
+    .hero__text {
+      width: 50%;
+    }
+    .cards {
+      display: grid;
+      grid-template-rows: 100px 100px 100px 100px;
+      grid-template-columns: 1fr 1fr 1fr;
+      
+      /*  grid-template-areas: 
+      ". cardone ."
+      "cardtwo . cardfour"
+      
+      ". cardthree ."
+      ;
+      
+      */
+      grid-column-gap: 1.5em;
+      
+
+    }
+
+    .card-feature-middle-top {
+      /* grid-area: cardone; */
+     grid-column: 2/3;
+     grid-row: 1/3;
+      
+    }
+
+    .card-feature-one {
+     /* grid-area: cardtwo;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2; 
+      
+      */
+
+      grid-column: 1/2;
+      grid-row: 2/4;
+
+    }
+   
+    .card-feature-middle-bottom {
+      /* grid-area: cardthree; */
+
+      grid-column: 2/3;
+      grid-row: 3/5;
+    }
+
+    .card-feature-four {
+     /* grid-area: cardfour; */
+
+     grid-column: 3/4;
+     grid-row: 2/4;
+
+    }
+
+  }
+
+ 
