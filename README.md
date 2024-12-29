@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentor](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/RoxySash/Four-Card-Challenge-Grid-Responsive.git)
+- Live Site URL: [GitHub Pages](https://roxysash.github.io/Four-Card-Challenge-Grid-Responsive/)
 
 ## My process
 
