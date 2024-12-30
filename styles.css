@@ -51,14 +51,14 @@
   p {
    
     color: var(--GrayishBlue);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 150%;
     font-weight: 400;
     
   }
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
-    font-size: 1.3rem;
+   
     color: var(--Verydarkblue);
     
     
@@ -96,7 +96,7 @@
   }
 
   .hero__text {
-    width: 55%; /* change in media query */
+    width: 60%; /* change in media query */
   }
 
 
@@ -160,21 +160,25 @@
     
     body {
       
-      
+      margin: 50px;
       min-height: 100vh;
       
     }
 
-    h3 {
+    h1 {
       font-size: 1.9rem;
       line-height: 45px;
       
       
 
     }
-    h4 {
-      font-size: 1.2rem;
+    h2 {
+      font-size: 1.9rem;
       
+    }
+
+    h4 {
+      font-size: 1.0rem;
     }
 
     .hero__text {
