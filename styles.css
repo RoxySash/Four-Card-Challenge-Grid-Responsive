@@ -35,7 +35,7 @@
     
     
     
-    width: 40px;
+    width: 50px;
    /* maybe ill use a padding to move it down  padding-top: 30px; */
     float: right;
     padding-top: 20px;
@@ -59,6 +59,7 @@
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
     font-size: 1.3rem;
+    color: var(--Verydarkblue);
     
     
   }
@@ -113,7 +114,7 @@
   .card-feature-one {
     border-top: 4px solid var(--Cyan);
     border-radius: 5px;
-    width: 270px;
+    width: 300px;
     
     box-shadow: 1px 4px 20px rgb(219, 218, 218);
     background-color: white;
@@ -125,7 +126,7 @@
   .card-feature-two {
     border-top: 4px solid var(--Red);
     border-radius: 5px;
-    width: 270px;
+    width: 300px;
     
     box-shadow: 1px 4px 20px rgb(219, 218, 218);
     background-color: white;
@@ -138,7 +139,7 @@
   .card-feature-three {
     border-top: 4px solid var(--Orange);
     border-radius: 5px;
-    width: 270px;
+    width: 300px;
     
     box-shadow: 1px 4px 20px rgb(219, 218, 218);
     background-color: white;
@@ -150,7 +151,7 @@
   .card-feature-four {
     border-top: 4px solid var(--Blue);
     border-radius: 5px;
-    width: 270px;
+    width: 300px;
     
     box-shadow: 1px 4px 20px rgb(219, 218, 218);
     background-color: white;
@@ -161,6 +162,25 @@
 
   @media (min-width:650px) {
     
+    body {
+      margin: 0 auto;
+      
+      min-height: 100vh;
+      
+    }
+
+    h3 {
+      font-size: 1.9rem;
+      line-height: 150%;
+      
+      
+
+    }
+    h4 {
+      font-size: 1.2rem;
+      
+    }
+
     .hero__text {
       width: 50%;
     }
